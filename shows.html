@@ -65,6 +65,13 @@ body {
 	padding: 0 4px;
   }
 
+  a {
+  font-weight: bold;
+  color: #3F0010;
+  text-decoration: none;
+  border: 0px;
+}
+
 	</style> 
 
 	</head>
@@ -78,7 +85,12 @@ body {
 			<!-- <ul type="square"> -->
 				<ul>
 					<li><a href="index.html">About</a></li>
-					<li><a href="shows.html">Shows</a></li>
+					<li class="dropdown"><a>Shows</a>
+						<div class="dropdown-content">
+						<a href="shows.html"> All </a>
+						<a href="shows.html#clowncar"> Clown Car</a>
+						<a href="shows.html#seasonalshitshow"> Seasonal Shit Show</a>
+						</div>
                     <li><a href="gallery.html">Gallery</a></li>
 					<li><a href="#contact">Contact</a></li>
 				</ul>
@@ -86,114 +98,144 @@ body {
 
 		<br><br><br>
 
-		<section>
             <img src="pics/header1.png">
-		</section>
 
+		<section id="clowncar">
         <div class="row"> <!-- Flyer & Info -->
             <div class="flyer"> <!-- 1 -->
                 <img src="pics/clown car flyer.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow" alt="Flyer for clown cult clown car.">
-                </div>
+				<video width="320" height="240" controls> <source src="man or muppet mars recording.mov" type="video/mp4">
+					Your browser does not support the video tag. </video>    
+			</div>
                 <div class="flyer">
                     <h2> Clown Cult: Clown Car </h2>
                     <p> <strong>Date:</strong> January 12, 2025 </p>
                     <p><strong>Location:</strong> Rubulad</p>
                     <p><strong>Show/Company:</strong> Clown Cult </p>
-                    <p><strong>Photographers:</strong> Human Flower Productions, Shamal Deare, Alex Kent, Norman </p>
+                    <p><strong>Photographers:</strong> Human Flower Productions
+							<a href="https://www.instagram.com/humanflowerproductions/" target="_blank"> @humanflowerproductions </a>, 
+							Shamal Deare <a href="https://www.instagram.com/shamaldeare/" target="_blank"> @shamaldeare </a>,
+						Alex Kent <a href="https://www.instagram.com/humanflowerproductions/" target="_blank"> @not_alex_kent_ </a>,
+					 and Norman <a href="https://www.instagram.com/humanflowerproductions/" target="_blank"> @notebooknorman </a>. </p>
                 </div>
-            </div> 
+            </div> </section>
 			<div> <!-- grid -->
 				<div class="row"> 
 					<div class="column"> <!-- 1 -->
-                        <video width="320" height="240" controls> <source src="man or muppet mars recording.mov" type="video/mp4">
-                            Your browser does not support the video tag. </video>
                         <img src="pics/muppet profile.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow" 
-						alt="Profile pic of GENDERFUCK and a prop stuffie.">
+						alt="Profile pic of GENDERFUCK and a prop stuffie."> 
+						<a href="https://www.instagram.com/humanflowerproductions/" target="_blank"> @humanflowerproductions </a>
                         <img src="pics/muppet head.jpeg" onclick="openModal();currentSlide(1)" class="hover-shadow" 
-						alt="Picture of GENDERFUCK wearing a muppet head.">
-                        <img src="pics/muppet ties.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow" 
+						alt="Picture of GENDERFUCK performing with a muppet head on.">
+						<a href="https://www.instagram.com/shamaldeare/" target="_blank"> @shamaldeare </a>
+                        <img src="pics/muppet ties.JPG" onclick="openModal();currentSlide(1)" class="hover-shadow" 
 						alt="Picture of GENDERFUCK mid-performance pulling at his ties.">
+						<a href="https://www.instagram.com/shamaldeare/" target="_blank"> @shamaldeare </a> 
+						<img src="pics/muppet roman.JPG" onclick="openModal();currentSlide(1)" class="hover-shadow" 
+						alt="Picture of GENDERFUCK and Rosemary's Baby Daddy.">
+						<a href="https://www.instagram.com/shamaldeare/" target="_blank"> @shamaldeare </a>
+						<img src="pics/muppet smile.JPG" onclick="openModal();currentSlide(1)" class="hover-shadow" 
+						alt="Picture of GENDERFUCK posing and smiling.">
+						<a href="https://www.instagram.com/shamaldeare/" target="_blank"> @shamaldeare </a>
                         <img src="pics/muppet dion.JPG" onclick="openModal();currentSlide(1)" class="hover-shadow" 
 						alt="Picture of GENDERFUCK and Dion Isis at Clown Car.">
+						<a href="https://www.instagram.com/shamaldeare/" target="_blank"> @shamaldeare </a>
                         <img src="pics/muppet ties closeup.jpeg" onclick="openModal();currentSlide(1)" class="hover-shadow" 
 						alt="Closeup of GENDERFUCK's outfit, focusing on two ties.">
+						<a href="https://www.instagram.com/not_alex_kent_/" target="_blank"> @not_alex_kent_ </a>
                         <img src="pics/muppet roman and me crowd.JPG" onclick="openModal();currentSlide(1)" class="hover-shadow" 
 						alt="Crowd reaction shot of a performance.">
+						<a href="https://www.instagram.com/not_alex_kent_/" target="_blank"> @not_alex_kent_ </a>
                         <img src="pics/muppet roman and me crowd 2.JPG" onclick="openModal();currentSlide(1)" class="hover-shadow" 
 						alt="Crowd reaction shot of a performance.">
+						<a href="https://www.instagram.com/not_alex_kent_/" target="_blank"> @not_alex_kent_ </a>
                         <img src="pics/muppet humanette puppet finger.JPG" onclick="openModal();currentSlide(1)" class="hover-shadow" 
 						alt="Humanette holding a finger puppet.">
+						<a href="https://www.instagram.com/shamaldeare/" target="_blank"> @shamaldeare </a>
                         <img src="pics/muppet humanette puppet finger 1.JPG" onclick="openModal();currentSlide(1)" class="hover-shadow" 
 						alt="Humanette holding a finger puppet.">
+						<a href="https://www.instagram.com/shamaldeare/" target="_blank"> @shamaldeare </a>
                         <img src="pics/muppet cast shot 3.JPG" onclick="openModal();currentSlide(1)" class="hover-shadow" 
 						alt="Cast shot of Clown Car.">
+						<a href="https://www.instagram.com/not_alex_kent_/" target="_blank"> @not_alex_kent_ </a>
                         <img src="pics/muppet cast shot 4.JPG" onclick="openModal();currentSlide(1)" class="hover-shadow" 
 						alt="Cast shot of Clown Car.">
-
+						<a href="https://www.instagram.com/shamaldeare/" target="_blank"> @shamaldeare </a>
 					</div>
 					<div class="column"> <!-- 2 -->
                         <video width="320" height="240" controls> <source src="man or muppet olivia recording.mov" type="video/mp4">
                             Your browser does not support the video tag. </video>
                         <img src="pics/muppet half body.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow" 
-						alt="Picture of GENDERFUCK posing with the prop stuffie.">
+						alt="Picture of GENDERFUCK posing with the prop stuffie."> 
+						<a href="https://www.instagram.com/humanflowerproductions/" target="_blank"> @humanflowerproductions </a>
+						<img src="pics/muppet shock.JPG" onclick="openModal();currentSlide(1)" class="hover-shadow" 
+						alt="Picture of GENDERFUCK posing with a prop muppet head on.">
+						<a href="https://www.instagram.com/shamaldeare/" target="_blank"> @shamaldeare </a>
                         <img src="pics/muppet head 2.jpeg" onclick="openModal();currentSlide(1)" class="hover-shadow" 
 						alt="Picture of GENDERFUCK posing with a prop muppet head on.">
+						<a href="https://www.instagram.com/shamaldeare/" target="_blank"> @shamaldeare </a>
                         <img src="pics/muppet ties 2.jpeg" onclick="openModal();currentSlide(1)" class="hover-shadow" 
 						alt="Picture of GENDERFUCK mid-performance pulling at his tie.">
+						<a href="https://www.instagram.com/shamaldeare/" target="_blank"> @shamaldeare </a>
+						<img src="pics/muppet props.JPG" onclick="openModal();currentSlide(1)" class="hover-shadow" 
+						alt="Picture of GENDERFUCK wearing a muppet head with his arms out.">
+						<a href="https://www.instagram.com/shamaldeare/" target="_blank"> @shamaldeare </a>
                         <img src="pics/muppet crowd sitting.jpeg" onclick="openModal();currentSlide(1)" class="hover-shadow" 
 						alt="Crowd shot of GENDERFUCK.">
+						<a href="https://www.instagram.com/not_alex_kent_/" target="_blank"> @not_alex_kent_ </a>
                         <img src="pics/muppet earrings.jpeg" onclick="openModal();currentSlide(1)" class="hover-shadow" 
 						alt="Outfit close up of GENDERFUCK's earrings.">
-                        <img src="pics/muppet full body.jpeg" onclick="openModal();currentSlide(1)" class="hover-shadow" 
-						alt="GENDERFUCK posing with stuffie prop, full body shot.">
+						<a href="https://www.instagram.com/not_alex_kent_/" target="_blank"> @not_alex_kent_ </a>
+                        <img src="pics/muppet full body.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow" 
+						alt="GENDERFUCK posing with stuffie prop, full body shot."> 
+						<a href="https://www.instagram.com/humanflowerproductions/" target="_blank"> @humanflowerproductions </a>
                         <img src="pics/muppet cast shot 2.JPG" onclick="openModal();currentSlide(1)" class="hover-shadow" 
 						alt="Cast shot of Clown Car.">
+						<a href="https://www.instagram.com/not_alex_kent_/" target="_blank"> @not_alex_kent_ </a>
                         <img src="pics/muppet cast shot 1.JPG" onclick="openModal();currentSlide(1)" class="hover-shadow" 
 						alt="Cast shot of Clown Car.">
-
+						<a href="https://www.instagram.com/not_alex_kent_/" target="_blank"> @not_alex_kent_ </a>
 					</div>
 				</div>
 
                 <hr> <!-- line break -->
                 
+				<section id="seasonalshitshow">
                 <div class="row"> <!-- Flyer & Info -->
                     <div class="flyer"> <!-- 1 -->
-                        <img src="pics/" onclick="openModal();currentSlide(1)" class="hover-shadow" alt="This will be a flyer.">
+                        <img src="pics/seasonalshitshow flyer.jpeg" onclick="openModal();currentSlide(1)" class="hover-shadow" 
+						alt="Flyer for Seasonal Sick/Sad Shit Show.">
+						<video width="320" height="240" controls> <source src="seasonal sick sad shit show recording.mov" type="video/mp4">
+							Your browser does not support the video tag. </video>
                         </div>
                         <div class="flyer">
                             <h2> Seasonal Shit Show </h2>
                             <p> <strong>Date:</strong> December 19, 2024 </p>
                             <p><strong>Location:</strong> Young Ethel's </p>
                             <p><strong>Show/Company:</strong> Sick/Sad Shit Show </p>
-                            <p><strong>Videographer:</strong> Masc.Ari </p>
+                            <p><strong>Videographer:</strong> Masc.Ari
+							<a href="https://www.instagram.com/masc.ari/" target="_blank"> @masc.ari </a></p> 
                         </div>
-                    </div>  
+                    </div> </section>
                     <div> <!-- grid -->
                         <div class="row"> 
                             <div class="column"> <!-- 1 -->
-                                <video width="320" height="240" controls> <source src="pics/" type="video/mp4">
-                                    Your browser does not support the video tag. </video>
-                                <img src="pics/" onclick="openModal();currentSlide(1)" class="hover-shadow" alt="This will be a picture.">
-                                <img src="pics/" onclick="openModal();currentSlide(1)" class="hover-shadow" alt="This will be a picture.">
-                                <img src="pics/" onclick="openModal();currentSlide(1)" class="hover-shadow" alt="This will be a picture.">
-        
+                                <img src="pics/seasonal shit show cast pic 1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow" alt="This will be a picture.">
+                                <img src="pics/seasonal shit show cast pic 3.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow" alt="This will be a picture.">
+								<a href="https://www.instagram.com/cochina_divina/" target="_blank"> @cochina_divina </a>        
                             </div>
                             <div class="column"> <!-- 2 -->
-                                <img src="pics/" onclick="openModal();currentSlide(1)" class="hover-shadow" alt="This will be a picture.">
-                                <img src="pics/" onclick="openModal();currentSlide(1)" class="hover-shadow" alt="This will be a picture.">
-                                <img src="pics/" onclick="openModal();currentSlide(1)" class="hover-shadow" alt="This will be a picture.">
-                                <img src="pics/" onclick="openModal();currentSlide(1)" class="hover-shadow" alt="This will be a picture.">
-        
+                                <img src="pics/seasonal shit show cast pic 2.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow" alt="This will be a picture.">
+                                <img src="pics/seasonal shit show cast pic 4.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow" alt="This will be a picture.">
+								<img src="pics/seasonal shit show cast pic 5.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow" alt="This will be a picture.">
                             </div>
                         </div>
-                        <hr>
+                        <hr><br>
 
 
-				<button class="button" onclick= "location.href='art.html'"> More Art! </button>
-				<button class="button" onclick= "location.href='portfolios.html'"> Portfolios </button>
-				<button class="button" onclick=" window.open(
-                    'https://docs.google.com/forms/d/e/1FAIpQLSdPxzUrXHxXnvQCTY2ADMXmkOY_Qj3hDGjPIf3-fzS-dgXHFw/viewform','_blank')">
-                     Book Me! </button>
+				<button class="button" onclick= "location.href='index.html'"> About </button>
+				<button class="button" onclick= "location.href='gallery.html'"> Gallery </button>
+				<button class="button" onclick=" window.open('https://','_blank')"> Book Me! </button>
 			</div>
 
 			<!--Lightbox-->
