@@ -82,6 +82,17 @@ aside {
   margin: 0px;
 }
 
+#about { margin-top: 2px; }
+
+footer {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100vw;
+	text-align: center;
+	background-color: #D6B60F;
+	}
+
 a {
   font-weight: bold;
   color: #81346d;
@@ -97,7 +108,7 @@ a:hover {
 	nav {
 		display: flex;
 		position: fixed;
-		float: left;
+		float: right;
 		text-align: left;
 		width: 100%;
 		height: auto;
@@ -129,17 +140,6 @@ a:hover {
 		margin-right: auto;
 		}
 
-	#about { margin-top: 2px; }
-
-	footer {
-		position: absolute;
-		left: 0;
-		bottom: 0;
-		width: 100vw;
-		text-align: center;
-		background-color: #D6B60F;
-		}
-
 	.dropdown {
 		cursor: pointer;
 		position: relative;
@@ -149,7 +149,7 @@ a:hover {
 	.dropdown-content {
 		display: none;
 		position: absolute;
-		right: 0;
+		left: 0;
 		min-width: 10em;
 		background-color: #81346d;
 		box-shadow: 0px 8px 16px 0px #81346d;
@@ -157,7 +157,7 @@ a:hover {
 		}
 
 	.dropdown-content a {
-		background-color: #B99C0D;
+		background-color: #D6B60F;
 		color: #81346d;
 		padding: 0.5em 2em 0.5em 1em;
 		text-decoration: none;
@@ -178,7 +178,13 @@ a:hover {
 	padding: 1rem;
 }
 
-
+.prettyborder {
+	border: 10px double #315757;
+	outline: #0fd6d6 dotted 10px;
+	margin: auto;  
+	text-align: center;
+	width: 70%;
+  }
 
   .button {
 	display: inline-block;
@@ -282,22 +288,23 @@ a:hover {
 	top: 0;
 	width: 100%;
 	height: 100%;
-	background-color: #91a9f294;
+	background-color: #315757b7;
   }
   
   /* Modal Content */
   .modal-content {
 	position: relative;
-	margin: auto;
-	padding: 0;
+	margin: 10%;
+	padding: 2%;
 	max-width: 75vw;
 	max-height: 85vh;
   }
   
   /* The Close Button */
   .close {
+	cursor: pointer;
 	color: white;
-	background-color: rgba(242,190,228, 0.5);
+	background-color: #0fd6d6b9;
 	position: absolute;
 	top: 80px;
 	right: 25px;
@@ -307,9 +314,8 @@ a:hover {
   
   .close:hover,
   .close:focus {
-	color: #999;
-	text-decoration: none;
-	cursor: pointer;
+	background-color: #315757;
+	color: white;
   }
   
   /* Hide the slides by default */
@@ -319,7 +325,7 @@ a:hover {
 
   .thumbnails {
 	margin: auto;
-	width: 25%;
+	width: 45%;
   }
   
   /* Next & previous buttons */
@@ -332,7 +338,7 @@ a:hover {
 	padding: 16px;
 	margin-top: -50px;
 	color: white;
-	background-color: rgba(242,190,228, 0.5);
+	background-color: #0fd6d6b9;
 	font-weight: bold;
 	font-size: 20px;
 	transition: 0.6s ease;
@@ -356,7 +362,8 @@ a:hover {
   /* On hover, add a black background color with a little bit see-through */
   .prev:hover,
   .next:hover {
-	background-color: rgba(242,190,228, 1);
+	background-color: #315757;
+	color: white;
   }
   
   img.demo {
