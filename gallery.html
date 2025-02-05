@@ -8,7 +8,7 @@
 		<meta name= "author" content="GENDERFUCK">
 		<title> GENDERFUCK </title>
 
-		<link href="rulesgf.css" rel="stylesheet">
+		<link href="rulesgfa.css" rel="stylesheet">
 
 		<link rel="apple-touch-icon" sizes="57x57" href="icon/apple-icon-57x57.png">
 		<link rel="apple-touch-icon" sizes="60x60" href="icon/apple-icon-60x60.png">
@@ -97,44 +97,40 @@ body {
                     <div> <!-- grid -->
                         <div class="row"> 
                             <div class="column"> <!-- 1 -->
-                                <img src="pics/" onclick="openModal();currentSlide(1)" class="hover-shadow" alt="This will be a picture.">
-                                <img src="pics/" onclick="openModal();currentSlide(1)" class="hover-shadow" alt="This will be a picture.">
-                                <img src="pics/" onclick="openModal();currentSlide(1)" class="hover-shadow" alt="This will be a picture.">
-                                <video width="320" height="240" controls> <source src="pics/" type="video/mp4">
-                                    Your browser does not support the video tag. </video>
+                                <img src="25/2025.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow" alt="2025 gallery, TBD."> 
+								<a href="construction.html"><h1> 2025 Gallery</h1></a>
+                                <img src="23/1a.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow" alt="2023 gallery."> 
+								<a href="construction.html"><h1> 2023 Gallery</h1></a>
+								<img src="21/1a.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow" alt="2021 gallery."> 
+								<a href="construction.html"><h1> 2021 Gallery</h1></a>                            
                             </div>
                             <div class="column"> <!-- 2 -->
-                                <img src="pics/" onclick="openModal();currentSlide(1)" class="hover-shadow" alt="This will be a picture.">
-                                <img src="pics/" onclick="openModal();currentSlide(1)" class="hover-shadow" alt="This will be a picture.">
-                                <img src="pics/" onclick="openModal();currentSlide(1)" class="hover-shadow" alt="This will be a picture.">
-                                <img src="pics/" onclick="openModal();currentSlide(1)" class="hover-shadow" alt="This will be a picture.">
-        
+                                <img src="24/1a.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow" alt="2024 gallery."> 
+								<a href="construction.html"><h1> 2024 Gallery</h1></a> 
+                                <img src="22/halloween3.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow" alt="2022 gallery."> 
+								<a href="construction.html"><h1> 2022 Gallery</h1></a> 
                             </div>
                         </div>
-                        <hr>
 
 						<button class="button" onclick= "location.href='index.html'"> About </button>
 						<button class="button" onclick= "location.href='shows.html'"> Shows </button>
 						<button class="button" onclick=" window.open('https://','_blank')"> Book Me! </button>
-			</div>
+			</div><br>
 
 			<!--Lightbox-->
 			<div id="myModal" class="modal">
 				<span class="close cursor" onclick="closeModal()">&times;</span>
 				<div class="modal-content">
-					<div class="mySlides">
-						<img src="introart/print j.jpg" class="lightboxwidth1" alt="Handmade print.">
-					</div> 
+					<div class="mySlides"> <img src="25/2025.jpg" alt=""> </div>
+					<div class="mySlides"> <img src="24/1a.jpg" alt=""> </div>
+					<div class="mySlides"> <img src="23/1a.jpg" alt=""> </div>
+					<div class="mySlides"> <img src="22/halloween3.jpg" alt=""> </div>
+					<div class="mySlides"> <img src="21/1a.jpg" alt=""> </div>
 				</div>
 			  
 				  <!-- Next/previous controls -->
 				  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
 				  <a class="next" onclick="plusSlides(1)">&#10095;</a>
-			  
-				  <!-- Thumbnail image controls -->
-				  <div class="thumbnails">
-					<img class="demo" src="introart/print j.jpg" onclick="currentSlide(1)" alt="Handmade print.">
-					</div>
 
 				</div>
 			  </div> <br>

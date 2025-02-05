@@ -1,0 +1,375 @@
+* {
+	max-width: 100%;
+	box-sizing: border-box;
+	font-family: OpenDyslexic-Regular;
+	scrollbar-width: auto;
+	scrollbar-color: #D6B60F #81346d;
+  }
+  
+  /* Works on Chrome/Edge/Safari */
+  *::-webkit-scrollbar {
+	width: 12px;
+  }
+  *::-webkit-scrollbar-track {
+	background: #d60fa1;
+  }
+  *::-webkit-scrollbar-thumb {
+	background-color: #D6B60F;
+	border-radius: 20px;
+	border: 2px solid #81346d;
+  }
+
+html {
+  cursor: url("icon/favicon.ico"), default;
+  scroll-behavior: smooth;
+}
+
+body {
+	background-color: #d60fa1;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center right;
+	position: relative;
+	margin: 0;
+	font-family: "OpenDyslexic-Regular";
+	padding-bottom: 6px;
+	}
+
+@font-face {
+  font-family: OpenDyslexic-Regular;
+  src: url(OpenDyslexic-Regular.otf);
+}
+
+h1 {text-align: center;}
+h2 {text-align: center;}
+h3 {text-align: center;}
+p {text-align: center; line-height: 1.5em;}
+div {text-align: center;}
+
+#container {
+	max-width: 90%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	border-top: 0;
+	line-height: 1.5em;
+}
+
+#page-container {position: relative; min-height: 100%;}
+  
+#content-wrap {padding-bottom: 13rem; /* Footer height */}
+
+hr {border: 1px solid #3f0010;
+	background-color: #3f0010;
+	padding-bottom: 0px;
+	margin: 0px; }
+
+main {
+  float: left;
+  width: 65%;
+  border: 1px solid #315757;
+  padding: 2em;
+  text-align: justify;
+}
+aside {
+  float: right;
+  width: 20%;
+  border: 1px solid #315757;
+  color: #81346d;
+  padding: 1em;
+  margin: 0px;
+}
+
+#about { margin-top: 2px; }
+
+footer {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100vw;
+	text-align: center;
+	background-color: #D6B60F;
+	}
+
+a {
+  font-weight: bold;
+  color: #81346d;
+  text-decoration: none;
+  border: 0px;
+}
+a:hover {
+  color: #D6B60F;
+}
+
+/* NAVBAR */
+
+	nav {
+		display: flex;
+		position: fixed;
+		float: right;
+		text-align: left;
+		width: 100%;
+		height: auto;
+		color: #3f0010;
+		background-color: #D6B60F;
+		margin-top: -10px;
+		z-index: 10;
+		}
+	nav a {
+		text-decoration: none;
+		color: #81346d;
+		}
+		/* 7A38A6 */
+	nav a:hover {color: #3f0010;}
+	nav ul {list-style-type: none;}
+	nav ul li {
+		display: inline-flex;
+		flex-flow: column wrap;
+		justify-content: flex-start;
+		padding-left: 10px;
+		padding-right: 10px;
+		}
+		nav ul li a img {vertical-align: text-bottom;}
+		nav ul li last-child {border-right: none}
+
+	header picture img {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		}
+
+	.dropdown {
+		cursor: pointer;
+		position: relative;
+		display: inline-block;
+		}
+
+	.dropdown-content {
+		display: none;
+		position: absolute;
+		left: 0;
+		min-width: 10em;
+		background-color: #81346d;
+		box-shadow: 0px 8px 16px 0px #81346d;
+		z-index: 20;
+		}
+
+	.dropdown-content a {
+		background-color: #D6B60F;
+		color: #81346d;
+		padding: 0.5em 2em 0.5em 1em;
+		text-decoration: none;
+		border-bottom: 1px solid white;
+		display: block;
+		}
+
+	.dropdown:hover .dropdown-content {display: block;}
+
+.links {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin: auto;
+	align-items: center;
+	justify-content: center;
+	gap: 5rem;
+	padding: 1rem;
+}
+
+.prettyborder {
+	border: 10px double #315757;
+	outline: #0fd6d6 dotted 10px;
+	margin: auto;  
+	text-align: center;
+	width: 70%;
+  }
+
+  .button {
+	display: inline-block;
+	margin: 2%;
+	padding: 15px 25px;
+	font-size: 15px;
+	font-weight: bold;
+	cursor: pointer;
+	text-align: center;
+	color: #fff; 
+	background-color: #0fd6d6;
+	border: none;
+	border-radius: 15px;
+	box-shadow: 0 9px #315757;
+  }
+  
+  .button:hover {background-color: #0B9C9C}
+  
+  .button:active {
+	background-color: #076262;
+	box-shadow: 0 5px #032626;
+	transform: translateY(4px);
+  }
+
+.grid-container-videos {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: 1%;
+	margin: 2%;
+	justify-content: space-around;
+}
+
+.grid-container {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	align-content: center;
+	gap: 2%;
+	margin: 2%;
+	padding-bottom: 1%;
+}
+
+.grid {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	align-content: center;
+}
+
+/* PHOTO GRID */
+  
+  .row {
+	display: -ms-flexbox; /* IE10 */
+	display: flex;
+	-ms-flex-wrap: wrap; /* IE10 */
+	flex-wrap: wrap;
+	margin: 1%;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+	-ms-flex: 50%; /* IE10 */
+	flex: 30%;
+	max-width: 40%;
+	padding: 0 4px;
+  }
+  
+  .column img {
+	margin-top: 8px;
+	vertical-align: middle;
+	width: 100%;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+	.column {
+	  -ms-flex: 50%;
+	  flex: 50%;
+	  max-width: 50%;
+	}
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other. 
+  Removed bc I don't like the way it looks lol
+  @media screen and (max-width: 600px) {
+	.column {
+	  -ms-flex: 100%;
+	  flex: 100%;
+	  max-width: 100%;
+	}
+  } */
+
+/* The Modal (background) */
+.modal {
+	background-color: #315757b7;
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* 5% Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: #0fd6d67d;
+  }
+  
+  /* Modal Content */
+  .modal-content {
+	position: relative;
+	margin: 3%;
+  }
+  
+  /* The Close Button */
+  .close {
+	cursor: pointer;
+	color: white;
+	position: absolute;
+	top: 50px;
+	right: 25px;
+	font-size: 35px;
+	font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+	color: #0fd6d6b9;
+  }
+  
+  /* Hide the slides by default */
+  .mySlides {
+	display: none;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+	cursor: pointer;
+	position: absolute;
+	top: 60vh;
+	width: auto;
+	padding: 16px;
+	margin-top: -50px;
+	color: white;
+	font-weight: bold;
+	font-size: 20px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+	-webkit-user-select: none;
+  }
+
+  /* Position the "prev button" to the left */
+  .prev {
+	left: 0;
+	border-radius: 3px 0 0 3px;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+	color: #0fd6d6b9;
+  }
+  
+  img.demo {
+	opacity: 0.6;
+	height: 8%;
+	width: 8%;
+  }
+  
+  .active,
+  .demo:hover {
+	opacity: 1;
+  }
+  
+  img.hover-shadow {
+	transition: 0.3s;
+  }
+  
+  .hover-shadow:hover {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.75);
+  }
